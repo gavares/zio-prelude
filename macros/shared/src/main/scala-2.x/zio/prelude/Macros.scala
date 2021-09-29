@@ -29,7 +29,7 @@ private[prelude] class Macros(val c: whitebox.Context) extends Liftables {
         val message =
           s"""
              |$assertionErrorHeader
-             |You cannot use `wrapAll` if you have a assertion:
+             |You cannot use `wrapAll` if you have an assertion:
              |${show(quotedAssertion)}
              |""".stripMargin
         c.abort(c.enclosingPosition, message)
